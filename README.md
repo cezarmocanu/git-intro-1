@@ -43,12 +43,15 @@ cls
 https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5
 
 
-
 # Comenzi git
 ```bash
 # am initializat un repo in folderul in care ma aflu
 # adica s-a creat un folder ascuns numit .git
 git init
+
+# Acest pas se face o singura data pentru autentificare
+git config --global user.name "unsernamegit"
+git config --global user.email "mailulmeudegit@gmail.com"
 
 # legam folderul/ repo-ul local de repo-ul de pe github
 # git remote add origin url
@@ -67,6 +70,8 @@ git status
 # Impachetam toate modificarile si adugam o eticheta cu un mesaj descriptiv
 # Mesajul trebuie sa fie intre gilimele
 git commit -m "Mesaj commit"
+
+# In cazul in care este primul commit dupa autentificare git-ul va va sugera sa va logati pe web
 
 # Trimite pe cloud/github toate commiturile locale
 git push
