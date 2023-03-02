@@ -50,12 +50,10 @@ https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-win
 # adica s-a creat un folder ascuns numit .git
 git init
 
-
 # legam folderul/ repo-ul local de repo-ul de pe github
 # git remote add origin url
 # url reprezinta url-ul repo-ului de pe git
 git remote add origin https://github.com/cezarmocanu/git-intro-1.git
-
 
 # adaugam TOATE modificarile
 git add .
@@ -64,4 +62,14 @@ git add .
 # verde adaugate in commit
 # rosu ne adaugate in commit
 git status
+
+# Impachetam toate modificarile si adugam o eticheta cu un mesaj descriptiv
+# Mesajul trebuie sa fie intre gilimele
+git commit -m "Mesaj commit"
+
+
+# Clonam/descarcam un repo de pe github in folderul in care ne aflam
+# git clone url
+# url reprezinta url-ul repo-ului de pe git
+git clone https://github.com/cezarmocanu/git-intro-1.git
 ```
