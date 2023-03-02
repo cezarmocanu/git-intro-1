@@ -59,4 +59,9 @@ git remote add origin https://github.com/cezarmocanu/git-intro-1.git
 
 # adaugam TOATE modificarile
 git add .
+
+# Ne indica ce fisiere au fost adaugate in commit
+# verde adaugate in commit
+# rosu ne adaugate in commit
+git status
 ```
