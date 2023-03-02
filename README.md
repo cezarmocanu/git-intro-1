@@ -56,4 +56,7 @@ git init
 # url reprezinta url-ul repo-ului de pe git
 git remote add origin https://github.com/cezarmocanu/git-intro-1.git
 
+
+# adaugam TOATE modificarile
+git add .
 ```
