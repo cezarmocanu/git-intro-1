@@ -82,6 +82,7 @@ git clone https://github.com/cezarmocanu/git-intro-1.git
 ```
 
 # Cum creez un branch/cum lucrez pe un branch
+# Atentie! Nu putem sa ne mutam pe o alta ramura, atata timp cat avem fisiere modificate sau commituri netrimise
 ```bash
 #Creez o comanda in cloud folosind interfata de la github
 
@@ -106,4 +107,42 @@ git push
 # Cand am finalizat toate modificarile din interfata de la Github creem un Pull Request (PR)
 
 # Dupa ce Pull Requestul este aprobat putem uni branch-ul nostru cu cel principal/sursa
+```
+
+# Cum descarcam modificarile de pe un branch?
+```bash
+
+# ne mutam pe branch-ul dorit
+git checkout branch-name
+
+# descarcam modificarile
+git pull
+```
+
+# Cum procedam daca din momentul in care am creat branc-ul nostru, s-au produs modificari pe branch-ul sursa
+```bash
+# ne mutam pe branch-ul dorit
+git checkout branch-name
+
+# preluam diferentele fara sa le descarcam
+git fetch
+
+# descarcam modificarile
+git pull
+
+# in cazul in care observam ca modificarile nu au venit/nu s-au produs
+# putem face merge, adica luam manual modificarile de pe branch-ul sursa
+# si le unim cu branc-ul nostru
+# git merge sursa tinta
+# sursa este ramura sursa
+# tinta este ramura pe care lucram noi/ramura tinta
+git merge main tabel-comenzi
+
+# in cazul in care apar conflicte mergem in editor si rezolvam manual conflictul
+# in functie de situatie, alegem bucatile de cod de interes
+# dupa ce conflictele sunt rezolvate si am testat codul putem face un commit
+
+git add .
+git commit -m "Am facut merge manual pentru a lua ultimele actualizari din main"
+git push
 ```
