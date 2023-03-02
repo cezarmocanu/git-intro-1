@@ -63,10 +63,17 @@ git add .
 # rosu ne adaugate in commit
 git status
 
+# Creeaza un commit local
 # Impachetam toate modificarile si adugam o eticheta cu un mesaj descriptiv
 # Mesajul trebuie sa fie intre gilimele
 git commit -m "Mesaj commit"
 
+# Trimite pe cloud/github toate commiturile locale
+git push
+
+#** Comanda poate sa fie modificata in cazul in care nu exista ramuri/branch-uri
+## sau in cazul in care lucram pe o ramura care nu exista pe cloud
+git push --set-upstream origin main
 
 # Clonam/descarcam un repo de pe github in folderul in care ne aflam
 # git clone url
