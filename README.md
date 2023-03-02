@@ -80,3 +80,30 @@ git push --set-upstream origin main
 # url reprezinta url-ul repo-ului de pe git
 git clone https://github.com/cezarmocanu/git-intro-1.git
 ```
+
+# Cum creez un branch/cum lucrez pe un branch
+```bash
+#Creez o comanda in cloud folosind interfata de la github
+
+# Se informeaza de diferentele dintre proiectul meu local si ce e pe cloud
+# Afla daca a aparut vreun branch nou pe cloud/ daca au aparut modificari 
+# Fara sa descarce aceste modificari 
+git fetch
+
+# Ne mutam proiectul pe ramura dorita
+# Numele ramurii este cel pe care l-am pus pe github
+git checkout branch-name
+
+# Facem modifiarile dorite pe aceasta ramura
+# Testam modificarile
+
+# Add commit push
+# Adauga modificarile intr-un commit si le trimite pe cloud pe branch-ul pe care lucram
+git add .
+git commit -m "Mesajul meu"
+git push
+
+# Cand am finalizat toate modificarile din interfata de la Github creem un Pull Request (PR)
+
+# Dupa ce Pull Requestul este aprobat putem uni branch-ul nostru cu cel principal/sursa
+```
